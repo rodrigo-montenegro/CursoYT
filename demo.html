@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formularios 🥐 </title>
+</head>
+
+<body>
+    <h1>Ejemplo de formularios</h1>
+    <h2>Ejemplo de Login</h2>
+
+    <form method="GET" action="#">
+        <input type="text" name="usuario" placeholder="ejemplo@correo.com" required/>
+        <input type="password" name="password" placeholder="**********" required/>
+        <!--<input type="button" value="Ingresa 🤣">-->
+        <button>Ingresa 🤣</button>
+    </form>
+
+    <h2>Registro</h2>
+    <form method="post" action="#">
+        <label for="nombre">Nombre *</label>
+        <br>
+        <input type="text" placeholder="Nombre" id="nombre" maxlength="20">
+        <br>
+        <label for="apellido">Apellido</label>
+        <br>
+        <input type="text" placeholder="Apellido" id="apellido" maxlength="30">
+        <br>
+        <label for="correo">Correo *</label>
+        <br>
+        <input type="email" placeholder="Correo" id="correo" required>
+        <br>
+        <label for="documento">DNI</label>
+        <br>
+        <input type="text" placeholder="DNI" id="documento" maxlength="8">
+        <br>
+        <label for="nacimiento">Fecha de Nacimiento</label>
+        <br>
+        <input type="date" id="nacimiento" required>
+        <br>
+        <label for="telefono">Telefono</label>
+        <br>
+        <input type="tel" id="telefono" placeholder="Numero de telefono">
+        <br>
+        <label for="color">Color favorito</label>
+        <br>
+        <input type="color" id="color">
+        <br>
+        <label for="nacionalidad">Nacionalidad</label>
+        <br>
+        <select name="" id="nacionalidad">
+            <option value="">Argentina</option>
+            <option value="">Brasil</option>
+            <option value="">Uruguay</option>
+            <option value="">Chile</option>
+            <option value="">Paraguay</option>
+        </select>
+        <br>
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="sexo" value="mujer" id="mujer">
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="sexo" value="hombre" id="hombre">
+        <label for="personalizado">Personalizado</label>
+        <input type="text" name="sexo" value="personalizado" id="personalizado">
+        <br>
+        <button>Registrate</button>
+    </form>
+</body>
+
+</html>
